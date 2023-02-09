@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.anima {
+    position: relative;
+    height: 50rem;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.picture,
+.amazing {
+    width: 55rem;
+    height: 55rem;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+.picture {
+    position: absolute;
+    transition: all 0.4;
+}
+.picture img {
+    width: 100%;
+}
+.amazing {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.anima:hover .picture {
+    transform: scale(120%) rotate(30deg);
+}
+.anima:hover .amazing {
+    opacity: 1;
+    background-color: rgb(197, 207, 216, 0.7);
+}
+
